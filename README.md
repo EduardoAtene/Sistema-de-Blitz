@@ -1,11 +1,61 @@
-﻿![](img//Aspose.Words.68e5d37e-2bf4-45cb-9c50-a1201ec048ba.001.jpeg) Universidade Federal de Mato Grosso do Sul ![](img//Aspose.Words.68e5d37e-2bf4-45cb-9c50-a1201ec048ba.002.png)![](img//Aspose.Words.68e5d37e-2bf4-45cb-9c50-a1201ec048ba.003.png)
+﻿
+
+Universidade Federal de Mato Grosso do Sul
+
+Algoritmos e Programac¸˜ao II
+
+Prof. Edson Takashi Matsubara
+
+Trabalho Optativo Blitz - Hash
+
+(convert.c) Considerando o arquivo base.txt (disponível na pasta *base*) foi escrito um programa convert.c que converte a base para o formato binário de registros com os campos e gerar o arquivo base.bin.
+
+*typedef struct{*
+	*char placa[8];*
+	*int ano;*
+	*char marca[10];*
+	*char modelo[15];*
+	*char estado[3];*
+*}ttipo;*
 
 
-#Estudo comparativo de algoritmos de ordenação
+(consulta.c) Foi implementado um programa que carregue o base.bin em uma hash onde o tratamento de colisões é realizado por cada uma lista encadeada conforme ilustrado na Figura 1.
 
-\1. Foi omplemente os algoritmos de ordenação bolha, inserção, seleção, intercalação (mergesort) e quicksort. Foi gerado vetores de tamanhos 1000, 10000, 100000, 200000, 300000, 400000, 500000 com valores de inteiros crescentes, decrescentes e embaralhados (No qual foi embaralhe utilizando o algoritmo de Fisher-Yates). Em que foi comparado o tempo de execução para cada situação de valores crescentes, decrescentes e embalhados de cada tamanho de cada algoritmo. Fiu obedecido os seguintes itens descritos abaixo:
 
-1) O vetor foi alocado com malloc() e desalocado com free().
-2) Foi medido o tempo de execução utilizando a função clock() da biblioteca time.h. O tempo foi medido exclusivamente nos algoritmos de ordenação (excluindo tempo de construção do vetor, embalhamento, etc).
-3) O codigo gerou três tabelas uma para cada situação de crescente, descrescente e emba- ralhado. As tabelas contém nas linhas os tamanhos dos vetores e nas colunas os algoritmos, cada celula da tabela o tempo de execução.
-4) Foi gerado um relatorio com gráficos utilizando as tabelas e foi apresentado uma discussão sobre os resultados obtidos. O relatorio foi gerado formato pdf e md (pasta relatorio).
+![](img//Figura1.png)
+
+
+Entrada: A entrada consiste em uma sequˆencia de placas a serem consultadas na base que sempre comec¸a
+
+com a letra ‘c’ conforme ilustrado a seguir:
+
+c OFD5325
+c OEC1204
+c NWZ5965
+c NOW7292
+c OCD7946
+c MTC9949
+c NVM1038
+c NRQ1086
+c OLN6083
+c OEC1204
+c OLV2474
+c NWZ5965
+c NOW7292
+c OCD7946
+c MTC9949
+c NVM1038
+c NRQ1086
+c OLN6083
+c OCX5847
+
+Saída: Para cada linha de entrada contém uma linha de saída informando se a placa existe na base de dados. Caso a placa conste na base de dados, o programa irá retornar todas as informações do registro deste carro.
+
+*carro <placa> <ano> <marca> <modelo> <estado> eh roubado!*
+
+caso o carro esteja na lista de carros roubados. Caso contrário o programa irá escrever:
+
+*carro <placa> nao consta na lista*
+
+
+
