@@ -1,14 +1,6 @@
-﻿
-
-Universidade Federal de Mato Grosso do Sul
-
-Algoritmos e Programac¸˜ao II
-
-Prof. Edson Takashi Matsubara
-
-Trabalho Optativo Blitz - Hash
-
-(convert.c) Considerando o arquivo base.txt (disponível na pasta *base*) foi escrito um programa convert.c que converte a base para o formato binário de registros com os campos e gerar o arquivo base.bin.
+# Sistema de Blitz usando tabela Hash
+<br>
+(convert.c) Considerando o arquivo base.txt (disponível na pasta *base*) foi escrito um programa convert.c que converte a base para o formato binário de registros com os campos e gerar o arquivo base.bin .
 
 *typedef struct{*<br>
 	*char placa[8];*
@@ -51,11 +43,11 @@ c OCX5847<br>
 <br>
 Saída: Para cada linha de entrada contém uma linha de saída informando se a placa existe na base de dados. Caso a placa conste na base de dados, o programa irá retornar todas as informações do registro deste carro.
 
-*carro <placa> <ano> <marca> <modelo> <estado> eh roubado!*
+*carro '**placa**' '**ano**' '**marca**' '**modelo**' '**estado**' eh roubado!*
 
 caso o carro esteja na lista de carros roubados. Caso contrário o programa irá escrever:
 
-*carro <placa> nao consta na lista*
+*carro '**placa**' nao consta na lista*
 
 
 
