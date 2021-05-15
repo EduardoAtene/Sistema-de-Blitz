@@ -116,7 +116,7 @@ int inserir_tabela(tpos dado){
             return -1;
         }
     }
-    list nova = (Lista*) malloc(sizeof(Lista));
+    list nova = (Lista *) malloc(sizeof(Lista));
     nova->objeto = dado;
     nova->prox = tabela_hash[indice];
     tabela_hash[indice] = nova;
@@ -124,7 +124,7 @@ int inserir_tabela(tpos dado){
 
 void imprimir(int x){
     FILE *base_bin;
-	base_bin = fopen("base.bin","rb");
+	base_bin = fopen("..//base//base.bin","rb");
     ttipo dados;
 
     //LEITURA  X = numero posição na base.bin
@@ -188,7 +188,7 @@ int main(void) {
 	tpos base_i;
 
 	// ABRIR ARQUIVO BIN
-	base_bin = fopen("base.bin","rb");
+	base_bin = fopen("..//base//base.bin","rb");
 
 	// VERIFICAR SE FOI ABERTO COM SUCESSO OU GERO ALGUM ERRO. TALVEZ NÃO EXISTA O ARQUIVO E RETORNA NULL / ERRO
 	if(base_bin == NULL){

@@ -16,9 +16,9 @@ int main(void) {
     // ABRIR ARQUIVOS
 	FILE *base_bin, *base_txt;
 	// Abrir arquivo.txt para leitura ("r")
-    base_txt = fopen("base//base.txt","r");
+    base_txt = fopen("..//base//base.txt","r");
     // Abrir arquivo.bin para escrita ("wb")
-	base_bin = fopen("base//base.bin","wb");
+	base_bin = fopen("..//base//base.bin","wb");
 
 	// Verificar se o arquivo foi aberto corretamente.
 	if(base_txt == NULL || base_bin == NULL){
